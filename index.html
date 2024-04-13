@@ -45,55 +45,32 @@
       </style>
 </head>
 
-<body class="bg-gray-300 text-gray-800">
+<body class="bg-gray-300 text-gray-800 body">
     
-<div class="text-center pt-10 pb-10">
-    <h1 class="font-bold text-4xl font-extrabold text-center text-gray-900 mt-6 tracking-wide shadow-lg hover:shadow-xl transition duration-300 pb-6 uppercase tracking-in-expand">Acabados</h1>
-</div>
-
-
-    <div class="flex custom-cursor image-container justify-center items-center heart contenedor bg-cover bg-center bg-no-repeat h-auto duration-500 hover:scale-125" style="background-image: url('images/heart.png'); background-size: contain; height: 250px; max-width: 250px; margin: 0 auto;">
+    <div class="text-center pt-10 pb-10">
+        <h1 class="font-bold text-4xl font-extrabold text-center text-gray-900 mt-6 tracking-wide shadow-lg hover:shadow-xl transition duration-300 pb-6 uppercase tracking-in-expand">Acabados</h1>
+    </div>
+    <div class="flex custom-cursor image-container justify-center items-center heart contenedor bg-cover bg-center bg-no-repeat h-auto duration-500 hover:scale-125 pt-10 pb-6" style="background-image: url('images/heart.png'); background-size: contain; height: 250px; max-width: 250px; margin: 0 auto;">
         <div class="w-65 h-65 overflow-hidden rounded-full -z-10">
           <img src="images/ever.png" alt="Ing. Ever" title="Ing. Ever" class="object-cover w-full h-full ">
-          <div class="bg-cover bg-center bg-no-repeat h-auto duration-500 ever" style="position: absolute; width: 112px;  height: 100px; top: 0px; z-index: 9999;">
-        </div>
-        </div>
-        
+          <div class="bg-cover bg-center bg-no-repeat h-auto duration-500 ever" style="position: absolute; width: 112px;  height: 100px; top: 10px; z-index: 9999;"></div>
+        </div>        
     </div>
-
-  
-
-<!-- ✅ Grid Section - Starts Here 👇 -->
-<div class="text-center pt-20">
-    <h1 class="text-3xl uppercase text-4xl font-bold text-center mt-8 text-gray-700">COCINA</h1>
-</div>
-<div id="cocina" class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
-</div>
-
-<div class="text-center pt-16">
-    <h1 class="text-3xl uppercase text-4xl font-bold text-center text-gray-700 mt-8">BAños</h1>
-</div>
-<div id="bathroom" class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
-</div>
-
-<div class="text-center pt-16">
-    <h1 class="text-3xl uppercase text-4xl font-bold text-center text-gray-700 mt-8">LUCES</h1>
-</div>
-<div id="luces" class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
-</div>
-
 
 
 <!-- Support Me 🙏🥰 -->
 <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
-<script>
-
-		
-    document.addEventListener('DOMContentLoaded', function () {
-        
-        function loadData(id, data){
-            
-            const projectsSection = document.getElementById(id);
+<script>		
+    document.addEventListener('DOMContentLoaded', function () {        
+        function loadData(title, data){            
+            const projectsSection = document.getElementsByTagName('body')[0];
+            const content = `
+                    <div class="text-center pt-12">
+                        <h1 class="text-3xl uppercase text-4xl font-bold text-center mt-8 text-gray-700">${title}</h1>
+                    </div>
+                    <div class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+                    `;
+            let elements = '';
             for (let d of data) {
                 
                 const projectHTML = `
@@ -112,13 +89,12 @@
                     </div>
                 </section>
                 `;
-
-                // Agrega el HTML generado al contenido de la sección
-                projectsSection.innerHTML += projectHTML;
+                elements += projectHTML;            
             }
-        }
 
-        
+            // Agrega el HTML generado al contenido de la sección
+            projectsSection.innerHTML += content+elements+'</div>';
+        }        
 
         // Define el número de iteraciones del bucle
         const numSections = 5;
@@ -246,11 +222,9 @@
             },
         ];
         
-
-        loadData('cocina', cocina);
-        loadData('bathroom', bathroom)
-        loadData('luces', luces)
-        
+        loadData('Cocina', cocina);
+        loadData('Baños', bathroom)
+        loadData('Luces', luces);        
     });
 
 		
