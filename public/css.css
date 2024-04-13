@@ -1,0 +1,36 @@
+/* Definir el estilo del cursor personalizado */
+.custom-cursor {
+    cursor: url("http://downloads.totallyfreecursors.com/cursor_files/heartarrow.cur"), url("http://downloads.totallyfreecursors.com/thumbnails/heart-arrow.gif"), auto;
+}
+/* Estilo para la imagen */
+.image-container {
+    display: inline-block;
+    position: relative;
+}
+.ever {
+    background-position: center;
+    background-size: contain;
+    right: -30px;
+    margin: 0 auto;
+    display: flex;
+}
+.image-container:hover .ever {
+    background-image: url(https://www.pikpng.com/pngl/b/261-2610098_printwallart-heart-outlines-white-transparent-heart-png-clipart.png);
+}
+.tracking-in-expand {
+    animation: tracking-in-expand 0.6s linear both
+}
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.2em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
+}
