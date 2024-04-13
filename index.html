@@ -19,51 +19,61 @@
     <style>
         /* Definir el estilo del cursor personalizado */
         .custom-cursor {
-          cursor: url("http://downloads.totallyfreecursors.com/cursor_files/heartarrow.cur"), url("http://downloads.totallyfreecursors.com/thumbnails/heart-arrow.gif"), auto;
-          
+          cursor: url("http://downloads.totallyfreecursors.com/cursor_files/heartarrow.cur"), url("http://downloads.totallyfreecursors.com/thumbnails/heart-arrow.gif"), auto;          
         }
       
         /* Estilo para la imagen */
         .image-container {
           display: inline-block;
-          position: relative;
+          position: relative;          
+        }      
+        .ever {           
+            background-position: center;
+            background-size: contain;
+            right: -30px;           
+            margin: 0 auto;
+            display: flex;
         }
       
-        /* Estilo para la imagen al pasar el cursor sobre ella */
-        .image-container:hover img {
-          opacity: 0.7; /* Por ejemplo, puedes reducir la opacidad de la imagen cuando el cursor esté sobre ella */
+        .image-container:hover .ever {
+            background-image: url(https://www.pikpng.com/pngl/b/261-2610098_printwallart-heart-outlines-white-transparent-heart-png-clipart.png);
         }
       </style>
 </head>
 
-<body class="bg-gray-200 text-gray-800">
+<body class="bg-gray-300 text-gray-800">
     
-<div class="text-center p-10 mb-8">
-    <h1 class="font-bold text-4xl text-5xl font-extrabold text-center text-gray-700 mt-8 tracking-wide shadow-lg hover:shadow-xl transition duration-300 pb-4"> -- CASA -- </h1>
+<div class="text-center pt-10 pb-10">
+    <h1 class="font-bold text-4xl text-5xl font-extrabold text-center text-gray-900 mt-6 tracking-wide shadow-lg hover:shadow-xl transition duration-300 pb-6"> -- CASA -- </h1>
 </div>
 
-<div class="flex custom-cursor image-container justify-center items-center heart contenedor bg-cover bg-center bg-no-repeat h-auto duration-500 hover:scale-125 " style="background-image: url('images/heart.png'); background-size: contain; height: 250px; max-width: 250px; margin: 0 auto;">
-    <div class="w-65 h-65 overflow-hidden rounded-full -z-10" >
-      <img src="images/ever.png" alt="Ing. Ever" title="Ing. Ever" class="object-cover w-full h-full duration-500 ">
+
+    <div class="flex custom-cursor image-container justify-center items-center heart contenedor bg-cover bg-center bg-no-repeat h-auto duration-500 hover:scale-125" style="background-image: url('images/heart.png'); background-size: contain; height: 250px; max-width: 250px; margin: 0 auto;">
+        <div class="w-65 h-65 overflow-hidden rounded-full -z-10">
+          <img src="images/ever.png" alt="Ing. Ever" title="Ing. Ever" class="object-cover w-full h-full ">
+          <div class="bg-cover bg-center bg-no-repeat h-auto duration-500 ever" style="position: absolute; width: 112px;  height: 100px; top: 0px; z-index: 9999;">
+        </div>
+        </div>
+        
     </div>
-  </div>
+
   
 
 <!-- ✅ Grid Section - Starts Here 👇 -->
 <div class="text-center pt-20">
-    <h1 class="text-3xl uppercase text-4xl font-bold text-center text-gray-800 mt-8">COCINA</h1>
+    <h1 class="text-3xl uppercase text-4xl font-bold text-center mt-8 text-gray-700">COCINA</h1>
 </div>
 <div id="cocina" class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
 </div>
 
 <div class="text-center pt-16">
-    <h1 class="text-3xl uppercase text-4xl font-bold text-center text-gray-800 mt-8">BAños</h1>
+    <h1 class="text-3xl uppercase text-4xl font-bold text-center text-gray-700 mt-8">BAños</h1>
 </div>
 <div id="bathroom" class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
 </div>
 
 <div class="text-center pt-16">
-    <h1 class="text-3xl uppercase text-4xl font-bold text-center text-gray-800 mt-8">LUCES</h1>
+    <h1 class="text-3xl uppercase text-4xl font-bold text-center text-gray-700 mt-8">LUCES</h1>
 </div>
 <div id="luces" class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
 </div>
@@ -84,12 +94,12 @@
                 
                 const projectHTML = `
                 <section class="">
-                    <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                    <div class="w-72 bg-gray-900 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                         <a href="${d.link}" target="_blank" >
                             <img src="${d.image}" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
                             <div class="px-4 py-3 w-72">
-                                <span class="text-gray-400 mr-3 uppercase text-xs">${d.brand}</span>
-                                <p class="text-lg font-bold text-black truncate block  uppercase">${d.title}</p>
+                                <span class="text-gray-300 mr-3 uppercase text-xs">${d.brand}</span>
+                                <p class="text-lg font-bold text-black text-white truncate block uppercase">${d.title}</p>
                                 <div class="flex items-center">
                                 <p class="text-lg font-semibold cursor-auto my-3 text-blue-400">${d.price}</p>                                          
                                 </div>
@@ -139,7 +149,7 @@
                 price: '₡ 120,000',
                 brand: 'Franz Viegener',
                 image: 'https://dpbfouxy1lg2q.cloudfront.net/58334/58334-2.webp',
-                link:'https://www.kthinfiniteshop.com/products/341/flat-s01'
+                link:'https://www.construplaza.com/Materiales/Ba%C3%B1os/Inodoros/Inodoro-una-pieza-doble-descarga-35-y-48-litros-600-gramos-blanco-Riga-Franz-Viegener-ZT410-PST-BL'
             },
             {
                 title: 'Sanitario Principal',
