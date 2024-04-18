@@ -9,7 +9,7 @@ function changeCarousel(val) {
     items.classList.remove("hidden");
   }
 }
-
+let total = 0;
 document.addEventListener("DOMContentLoaded", function () {
   function loadCarousel(title, data) {
     const carousel = document.getElementById("items-carrusel");
@@ -86,6 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 `;
     let elements = "";
     for (let d of data) {
+      try {
+        total += +d.price.replaceAll("₡", "").replaceAll(",", "");
+      } catch (error) {}
       const projectHTML = `
             <section class="">
                 <div class="w-72 bg-gray-900 shadow-md rounded-xl duration-500 contrast-75 brightness-90 hover:scale-110 hover:shadow-xl hover:contrast-100 hover:brightness-100">
@@ -110,9 +113,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function loadContent() {
+    total = 0;
     loadData("Cocina", cocina);
     loadData("Baños", bathroom);
     loadData("Luces", luces);
+    try {
+      formatoDinero = total.toLocaleString("es-CR", {
+        style: "currency",
+        currency: "CRC",
+      });
+      console.log("TOTAL: " + formatoDinero);
+    } catch (error) {}
 
     loadCarousel("Cocina", cocina);
     loadCarousel("Baños", bathroom);

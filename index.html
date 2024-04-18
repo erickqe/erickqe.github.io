@@ -1,59 +1,62 @@
 <!doctype html>
 <html class="scroll-smooth">
-
-    <head>
-        <meta charset="utf-8">
-        <title>Casa Laura y Erick</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="images/icon.ico" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            clifford: '#da373d',
-                        }
+<head>
+    <meta charset="utf-8">
+    <title>Casa Laura y Erick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.ico" />
+    <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
                     }
                 }
             }
-        </script>
-        <!--Simple carousel -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-        
-        <script src="public/data.js"></script>
-        <script src="public/carousel.js"></script>
-        <link href="public/css.css" rel="stylesheet" />
+        }
+    </script>
+    <!--Simple carousel plugin -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
-    </head>
+    <script src="public/dataBathroom.js"></script>
+    <script src="public/dataKitchen.js"></script>
+    <script src="public/dataLights.js"></script>
+    <!--Load then carousel-->
+    <script src="public/carousel.js"></script>
+    <link href="public/css.css" rel="stylesheet" />
 
-    <body class="bg-gray-300 text-gray-800 body">
-        <div class="text-center pt-10 pb-10">
-            <h1 class="font-bold text-4xl font-extrabold text-center text-gray-900 mt-6 tracking-wide shadow-lg hover:shadow-xl transition duration-300 pb-6 uppercase tracking-in-expand">
-                Acabados
-            </h1>
+</head>
+
+<body class="bg-gray-300 text-gray-800 body">
+    <div class="text-center pt-10 pb-10">
+        <h1 class="font-bold text-4xl font-extrabold text-center text-gray-800 mt-6 tracking-wide shadow-lg hover:shadow-xl transition duration-300 pb-6 uppercase tracking-in-expand">
+            Acabados
+        </h1>
+    </div>
+    <div class="flex custom-cursor image-container justify-center items-center heart contenedor bg-cover bg-center bg-no-repeat h-auto duration-500 hover:scale-125 pt-10 pb-6"
+        style="background-image: url('images/heart.png'); background-size: contain; height: 250px; max-width: 250px; margin: 0 auto;">
+        <div class="w-65 h-65 overflow-hidden rounded-full -z-10">
+            <img src="images/ever.png" alt="Ing. Ever" title="Ing. Ever"
+                class="object-cover w-full h-full brightness-90 hover:brightness-100 drop-shadow-xl">
+            <div class="bg-cover bg-center bg-no-repeat h-auto duration-500 ever"
+                style="position: absolute; width: 112px;  height: 100px; top: 10px; z-index: 9999;"></div>
         </div>
-        <div class="flex custom-cursor image-container justify-center items-center heart contenedor bg-cover bg-center bg-no-repeat h-auto duration-500 hover:scale-125 pt-10 pb-6"
-            style="background-image: url('images/heart.png'); background-size: contain; height: 250px; max-width: 250px; margin: 0 auto;">
-            <div class="w-65 h-65 overflow-hidden rounded-full -z-10">
-                <img src="images/ever.png" alt="Ing. Ever" title="Ing. Ever"
-                    class="object-cover w-full h-full brightness-90 hover:brightness-100 drop-shadow-xl">
-                <div class="bg-cover bg-center bg-no-repeat h-auto duration-500 ever"
-                    style="position: absolute; width: 112px;  height: 100px; top: 10px; z-index: 9999;"></div>
+    </div>
+    <div class="flex justify-center items-center justify-items-center pt-14 mt-10 pl-14">
+        <label class="inline-flex items-center mb-5 cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer" onchange="changeCarousel(this)">
+            <div class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
             </div>
-        </div>
-        <div class="flex justify-center items-center justify-items-center pt-14 mt-10 pl-14">
-            <label class="inline-flex items-center mb-5 cursor-pointer">
-                <input type="checkbox" value="" class="sr-only peer" onchange="changeCarousel(this)">
-                <div
-                    class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
-                </div>
-                <span class="ms-3 text-sm font-medium text-gray-400 dark:text-gray-500 uppercase">Show Carrousel</span>
-            </label>
-        </div>
-        <div id="items-content"></div>
-        <div id="items-carrusel" class="hidden" style="max-width: 600px; margin: 0 auto;"></div>
-    </body>
-
+            <span class="ms-3 text-sm font-medium text-gray-400 dark:text-gray-500 uppercase">Show Carrousel</span>
+        </label>
+    </div>
+    <!--Load Data-->
+    <div id="items-content"></div>
+    <!--Load carrusel-->
+    <div id="items-carrusel" class="hidden" style="max-width: 600px; margin: 0 auto;"></div>
+</body>
 </html>

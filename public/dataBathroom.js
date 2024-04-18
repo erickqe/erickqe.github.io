@@ -1,23 +1,3 @@
-//All data
-const cocina = [
-  {
-    title: "GRIFO COCINA - LIV-PL01",
-    price: "₡ 86,900",
-    brand: "kthinfinite",
-    image:
-      "https://media.nidux.net/pull/800/599/15612/166-product-653198ff0ab26-liv-pl01-01.png",
-    link: "https://www.kthinfiniteshop.com/products/1/liv-01",
-  },
-  {
-    title: "FREGADERO AZUR-7946",
-    price: "₡ 205,900",
-    brand: "kthinfinite",
-    image:
-      "https://media.nidux.net/pull/800/599/15612/373-product-6538308c46efa-azur-7946-01.png",
-    link: "https://www.kthinfiniteshop.com/products/373/azur-7946",
-  },
-];
-
 const bathroom = [
   {
     title: "GTRIFO Principal",
@@ -50,7 +30,7 @@ const bathroom = [
   },
   {
     title: "Ducha",
-    price: "₡ 72.950",
+    price: "₡ 72,950",
     brand: "Pfister",
     image:
       "https://cr.epaenlinea.com/media/catalog/product/6/6/66fe814d-236d-4962-b10a-53c876b877db.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300",
@@ -58,7 +38,7 @@ const bathroom = [
   },
   {
     title: "Grifo secundario",
-    price: "₡ 18.950",
+    price: "₡ 18,950",
     brand: "Aqua Nuova",
     image:
       "https://cr.epaenlinea.com/media/catalog/product/7/6/763bfc82-fe7d-481a-9e5f-97e302fabdae.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=600&width=300&canvas=600:600",
@@ -66,7 +46,7 @@ const bathroom = [
   },
   {
     title: "Rejilla",
-    price: "₡ 11.995",
+    price: "₡ 11,995",
     brand: "epaenlinea",
     image:
       "https://cr.epaenlinea.com/media/catalog/product/f/8/f8d57972-2ca6-4e82-b1af-49a4c1f25ad9.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300",
@@ -93,39 +73,5 @@ const bathroom = [
     brand: "amazon",
     image: "https://m.media-amazon.com/images/I/411wxXIaTpL._AC_SL1080_.jpg",
     link: "https://www.amazon.com/LGSFTBFS-Bathroom-Stainless-Clothes-Kitchen/dp/B0B88H9ZQ2/ref=sr_1_22_sspa?crid=2ECMSFT4WJWQ0&dib=eyJ2IjoiMSJ9.MG0fRrhDIpOrNpoypKmJCuQm5GmYXBH_SudT8nYGxJmDtEJXppAH_D7sebUOEmdzW4Z0B-WRsR7JUII3pfrFBWhCBQuIECh_kt03w8XGXensiY2s2CAz8JdI41paQcEiMZtFnpQiSJb3xIZwq977cSnNSyzF4CNPVTcBKyqo90RhRg9mpoghLlSuz93CBYlqCphtWUt4QAjDM1geZmveOFqilcYDcPVg5Irlx9uMf0cb76pW4-5VW-uDC0wFkAu_0pTpON3Mx_lg0PRAtukK1boeJwL5q8d42NRYeW8eN8g._Yh9QbxfEb7EzKWX_ptir2TL-Bhfacf4dKbCL2_0ns8&dib_tag=se&keywords=GANCHO%2BPARA%2BBA%C3%91O&qid=1712927274&sprefix=gancho%2Bpara%2Bba%C3%B1o%2Caps%2C128&sr=8-22-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1",
-  },
-];
-
-const luces = [
-  {
-    title: "LÁMPARA SALA",
-    price: "₡ 162,850",
-    brand: "mundoiluminacion - NOVELT",
-    image:
-      "https://mundoiluminacion.com/costa-rica/wp-content/uploads/sites/2/2023/10/LamparaNovelt2.png",
-    link: "https://mundoiluminacion.com/costa-rica/producto/lampara-novelt/",
-  },
-  {
-    title: "Luz empotrada redonda",
-    price: "₡ 6,500.00",
-    brand: "construplaza",
-    image: "https://dpbfouxy1lg2q.cloudfront.net/59162/59162-1.webp",
-    link: "https://www.construplaza.com/Materiales/Iluminaci%C3%B3n-y-Ventilaci%C3%B3n/L%C3%A1mparas/Lampara-empotrada-redonda-LED-12W-100-240V-4000K-blanco-Bucaramanga-Tecnolite-12YDLED430MV40B",
-  },
-  {
-    title: "APLIQUE FIG",
-    price: "₡ 28,800",
-    brand: "mundoiluminacion",
-    image:
-      "https://mundoiluminacion.com/costa-rica/wp-content/uploads/sites/2/2023/10/ApliqueFig2.png",
-    link: "https://mundoiluminacion.com/costa-rica/producto/aplique-fig/",
-  },
-  {
-    title: "Luz exterior",
-    price: "₡ 22,374",
-    brand: "mundoiluminacion",
-    image:
-      "https://mundoiluminacion.com/costa-rica/wp-content/uploads/sites/2/2023/10/ApliqueRussian3.png",
-    link: "https://mundoiluminacion.com/costa-rica/producto/aplique-russian/",
   },
 ];
