@@ -53,6 +53,13 @@ const bathroom = [
     link: "https://cr.epaenlinea.com/rejilla-desague-ba-o-cuadrada-acero-inoxidable-antiolores-e-insectos.html",
   },
   {
+    title: "PORCELANATO enchape",
+    price: "₡ 12,000 m2",
+    brand: "porceramica",
+    image: "https://erickqe.github.io/images/porcelanato-bano.jpeg",
+    link: "https://www.porceramica.com/",
+  },
+  {
     title: "Extractor",
     price: "₡ 22,000",
     brand: "construplaza",

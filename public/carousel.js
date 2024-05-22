@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     total = 0;
     loadData("Cocina", cocina);
     loadData("Baños", bathroom);
+    loadData("Sala", sala);
     loadData("Luces", luces);
     try {
       formatoDinero = total.toLocaleString("es-CR", {
