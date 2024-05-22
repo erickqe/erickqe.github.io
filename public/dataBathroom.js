@@ -21,13 +21,29 @@ const bathroom = [
     link: "https://www.construplaza.com/P/NjQ4MzM=",
   },
   {
+    title: "LAVATORIO Principal",
+    price: "₡ 135,495",
+    brand: "KTHINFINITE",
+    image:
+      "https://mundoiluminacion.com/costa-rica/wp-content/uploads/sites/2/2023/11/MuebleBanoMistyMundoIluminacion1.png",
+    link: "https://mundoiluminacion.com/costa-rica/producto/mueble-de-bano-misty/",
+  },
+  {
+    title: "LAVATORIO secundario",
+    price: "₡ 139,320",
+    brand: "KTHINFINITE",
+    image:
+      "https://mundoiluminacion.com/costa-rica/wp-content/uploads/sites/2/2023/11/MuebleBanoMuselinoMundoIluminacion1.png",
+    link: "https://mundoiluminacion.com/costa-rica/producto/mueble-de-bano-muselino/",
+  },
+  /*{
     title: "LAVATORIO DE CERAMICA",
     price: "₡ 49,900",
     brand: "KTHINFINITE",
     image:
       "https://media.nidux.net/pull/800/599/15612/468-product-6538412b07f4e-kth-720-01.png",
     link: "https://www.kthinfiniteshop.com/products/468/kth-720",
-  },
+  },*/
   {
     title: "Ducha",
     price: "₡ 72,950",
