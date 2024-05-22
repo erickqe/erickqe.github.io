@@ -1,19 +1,18 @@
 const sala = [
   {
-    title: "BARANDAL GRADAS",
+    title: "BARANDAL GRADAS 1",
     price: "₡ 000,000",
     brand: "pinterest - METAL",
-    image:
-      "https://i.pinimg.com/564x/7e/8c/2a/7e8c2ac260a648ad45d8f4ac7023c005.jpg",
-    link: "https://www.pinterest.com/pin/3940718417752153/",
+    image: "https://erickqe.github.io/images/grada1.jpg",
+    link: "#",
   },
   {
     title: "BARANDAL GRADAS 2",
     price: "₡ 000,000",
     brand: "pinterest - METAL",
     image:
-      "https://i.pinimg.com/564x/75/f8/22/75f8227aa8e531c7dfa437e8bb9ce25b.jpg",
-    link: "https://www.pinterest.com/pin/36802921954190473/",
+      "https://i.pinimg.com/564x/7e/8c/2a/7e8c2ac260a648ad45d8f4ac7023c005.jpg",
+    link: "https://www.pinterest.com/pin/3940718417752153/",
   },
   {
     title: "PORCELANATO",
